@@ -7,7 +7,7 @@ let containerRef: ForwardRef | undefined;
 
 const createSlideModal = (modals: Array<ModalType>) => {
     return (props: {children: React.ReactNode, toggleStatusBarStyle?: boolean}) => 
-                <_Container {...props} forwardRef={ref => containerRef = ref} modals={modals}/>
+                <_Container {...props} forwardRef={ref => containerRef = ref} modals={modals} renderBackground />
 }
 
 export const MODAL_PADDDING_BOTTOM = _top;
